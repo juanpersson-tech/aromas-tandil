@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="version" content="AROMAS-TANDIL-2026-09-01-v2">
-<title>AROMAS TANDIL · Perfumería</title>
+<title>VERDE · Perfumería</title>
 <style>
 :root{--cream:#cad2c5;--sage:#84a98c;--green:#52796f;--deep:#354f52;--navy:#2f3e46;--bg:#f7f8f5;--white:#fff;--muted:#687779;--shadow:0 14px 35px rgba(47,62,70,.12)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--navy);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button{font:inherit;cursor:pointer}
@@ -23,7 +22,7 @@
 
 
 .admin-screen{position:fixed;inset:0;z-index:500;background:#f7f8f5;overflow:auto;display:none}.admin-screen.open{display:block}.admin-top{height:72px;background:#fff;border-bottom:1px solid #e2e8e3;display:flex;align-items:center;justify-content:space-between;padding:0 max(18px,5vw);position:sticky;top:0;z-index:2}.admin-brand{font-weight:900;letter-spacing:.16em;color:var(--navy)}.admin-brand span{font-size:9px;color:var(--green);letter-spacing:.1em}.admin-close{border:0;background:transparent;color:var(--green);font-weight:900}.admin-wrap{width:min(1100px,92vw);margin:30px auto 70px}.admin-login{width:min(420px,92vw);margin:80px auto;background:#fff;border:1px solid #e1e7e2;border-radius:20px;padding:30px;box-shadow:0 10px 30px rgba(47,62,70,.07);text-align:center}.admin-login h2{font:500 32px Georgia,serif;margin:5px 0 8px}.admin-login p{font-size:12px;color:var(--muted);line-height:1.5}.admin-pin{width:100%;text-align:center;font-size:24px;letter-spacing:.35em;padding:13px;border:1px solid #d9e1dc;border-radius:11px;margin:16px 0}.admin-enter,.admin-save{border:0;background:var(--navy);color:#fff;border-radius:11px;padding:13px 18px;font-weight:900;width:100%}.admin-error{color:#a33;font-size:12px;min-height:18px;margin-top:8px}.admin-panel{display:none}.admin-panel.open{display:block}.admin-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:20px}.admin-head h1{font:500 38px Georgia,serif;margin:0}.admin-head p{font-size:12px;color:var(--muted);margin:5px 0 0}.admin-actions{display:flex;gap:8px}.admin-tabs{display:flex;gap:7px;overflow:auto;margin-bottom:18px}.admin-tab{border:1px solid #d9e1dc;background:#fff;padding:10px 14px;border-radius:999px;font-size:12px;font-weight:800;white-space:nowrap}.admin-tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}.admin-card{background:#fff;border:1px solid #e1e7e2;border-radius:18px;padding:20px;margin-bottom:15px}.admin-card h3{margin:0 0 14px;font:500 24px Georgia,serif}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.admin-grid .full{grid-column:1/-1}.admin-card label{font-size:11px;font-weight:800;color:#526163}.admin-card input,.admin-card select,.admin-card textarea{width:100%;margin-top:5px;padding:10px;border:1px solid #d9e1dc;border-radius:9px;background:#fbfcfa}.admin-card textarea{min-height:80px;resize:vertical}.admin-catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:18px}.admin-catalog-card{background:#fff;border:1px solid #e1e7e2;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(47,62,70,.07)}.admin-catalog-card .photo{height:300px}.admin-catalog-card .body{padding:16px}.admin-catalog-card .admin-edit-btn{width:100%;border:0;background:var(--navy);color:#fff;border-radius:11px;padding:11px;font-weight:900;margin-top:12px}.admin-catalog-card .admin-edit-btn:hover{background:var(--green)}.admin-edit-form{padding:16px;background:#f8faf7;border-top:1px solid #e1e7e2;display:grid;gap:10px}.admin-edit-form label{font-size:10px;font-weight:900;color:#526163}.admin-edit-form input,.admin-edit-form select,.admin-edit-form textarea{width:100%;margin-top:4px;padding:9px;border:1px solid #d9e1dc;border-radius:9px;background:#fff}.admin-edit-form textarea{min-height:90px}.admin-notes-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}.admin-notes-grid textarea{min-height:90px}.admin-ai-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.admin-ai-btn{border:1px solid #cbd8d0;background:#eef5f0;color:var(--navy);border-radius:10px;padding:9px 12px;font-weight:900;cursor:pointer}.admin-ai-note{font-size:10px;color:var(--muted)}.admin-edit-actions{display:flex;gap:8px}.admin-edit-actions button{flex:1;border:0;border-radius:10px;padding:10px;font-weight:900}.admin-edit-save{background:var(--green);color:#fff}.admin-edit-cancel{background:#e8eeea;color:var(--navy)}.admin-product b{font-size:13px}.admin-product small{display:block;color:var(--muted);margin-top:3px}.admin-product button{border:1px solid #d7e0da;background:#fff;padding:8px 10px;border-radius:9px;font-weight:800;font-size:11px}.admin-promo-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;border-top:1px solid #edf0ec;padding:13px 0}.admin-promo-row:first-of-type{border-top:0}.admin-note{font-size:11px;color:#788485;line-height:1.5}.admin-save-msg{font-size:11px;color:var(--green);min-height:17px;margin-top:7px}.admin-order{border-top:1px solid #edf0ec;padding:14px 0;font-size:12px}.admin-order:first-of-type{border-top:0}
-@media(max-width:650px){.admin-grid,.admin-promo-row,.admin-notes-grid{grid-template-columns:1fr}.admin-grid .full{grid-column:auto}.admin-head{align-items:start;flex-direction:column}}
+@media(max-width:650px){.admin-grid,.admin-promo-row,.admin-notes-grid{grid-template-columns:1fr}.size-row{grid-template-columns:1fr !important}.admin-grid .full{grid-column:auto}.admin-head{align-items:start;flex-direction:column}}
 
 .checkout-screen{position:fixed;inset:0;z-index:400;background:#f7f8f5;overflow:auto;display:none}.checkout-screen.open{display:block}.checkout-top{height:72px;background:#fff;border-bottom:1px solid #e2e8e3;display:flex;align-items:center;justify-content:space-between;padding:0 max(18px,5vw);position:sticky;top:0;z-index:2}.checkout-back{border:0;background:transparent;color:var(--green);font-weight:900}.checkout-brand{font-weight:900;letter-spacing:.18em;color:var(--navy)}.checkout-brand span{font-size:9px;color:var(--green);letter-spacing:.12em}.secure{font-size:12px;color:#647173}.checkout-wrap{width:min(1120px,92vw);margin:35px auto 70px;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,.75fr);gap:28px}.checkout-main,.checkout-summary{background:#fff;border:1px solid #e1e7e2;border-radius:20px;box-shadow:0 10px 30px rgba(47,62,70,.07)}.checkout-main{padding:28px}.checkout-summary{padding:23px;height:max-content;position:sticky;top:100px}.step-title{display:flex;gap:13px;margin:8px 0 18px}.step-title>span{width:30px;height:30px;min-width:30px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900;font-size:13px}.step-title h2{font:500 25px Georgia,serif;margin:0}.step-title p{font-size:12px;color:var(--muted);margin:4px 0 0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 30px}.form-grid label{font-size:12px;font-weight:800;color:#526163}.form-grid label.full{grid-column:1/-1}.form-grid input,.form-grid select,.form-grid textarea{width:100%;margin-top:6px;padding:11px 12px;border:1px solid #d9e1dc;border-radius:10px;background:#fbfcfa;color:var(--navy);outline:none}.form-grid textarea{min-height:75px;resize:vertical}.optional{font-size:10px;color:#899393;font-weight:500}.choice-list{display:grid;gap:10px;margin:0 0 30px}.choice{display:flex;align-items:center;gap:12px;border:1px solid #dfe6e1;border-radius:13px;padding:14px;cursor:pointer}.choice:has(input:checked){border-color:var(--sage);background:#f5f8f4;box-shadow:0 0 0 1px var(--sage) inset}.choice input{accent-color:var(--green)}.choice div{flex:1}.choice b{display:block;font-size:13px}.choice small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.choice strong,.choice>span{font-size:12px;color:var(--green);font-weight:900}.terms{display:flex;gap:9px;align-items:flex-start;font-size:12px;color:#647173;margin:4px 0 15px}.terms input{accent-color:var(--green);margin-top:2px}.finish-order{width:100%;border:0;border-radius:13px;background:var(--navy);color:#fff;padding:14px;font-weight:900}.payment-note{font-size:10px;color:#7c8788;line-height:1.5;text-align:center;margin:11px 0 0}.checkout-summary h3{font:500 25px Georgia,serif;margin:0 0 18px}.summary-item{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #edf0ec}.summary-item img{width:55px;height:65px;object-fit:cover;border-radius:9px;background:var(--cream)}.summary-item div{flex:1}.summary-item b{font-size:12px;display:block}.summary-item small{font-size:11px;color:var(--muted)}.summary-line,.summary-total{display:flex;justify-content:space-between;gap:10px}.summary-line{font-size:12px;color:#657274;padding-top:12px}.summary-total{border-top:1px solid #dfe5e1;margin-top:15px;padding-top:15px;font-size:19px}.summary-total strong{color:var(--navy)}.order-success{text-align:center;padding:45px 20px}.order-success h2{font:500 38px Georgia,serif;margin:10px 0}.order-success p{color:var(--muted);line-height:1.6}.success-icon{width:58px;height:58px;margin:auto;border-radius:50%;background:var(--sage);color:#fff;display:grid;place-items:center;font-size:28px}
 @media(max-width:850px){.checkout-wrap{grid-template-columns:1fr}.checkout-summary{position:static}.checkout-top .secure{display:none}}
@@ -34,12 +33,69 @@ footer{background:var(--navy);color:#dce5e1;text-align:center;padding:30px 20px;
 @media(max-width:600px){.promo-layout{gap:4px}.promo-product-img{width:88px;height:145px;margin-left:0}.promo h1{font-size:38px}.promo p{font-size:13px}.topbar{padding:0 16px}.slide{min-height:270px;padding:42px 48px}.catalog{padding-top:35px}.head{align-items:start;flex-direction:column}.grid{gap:12px}.photo{height:220px}.body{padding:13px}.body h3{font-size:18px}.notes-short{font-size:11px}.card-bottom{align-items:stretch;flex-direction:column}.primary,.detail-btn{width:100%}.modal-content{display:block}.detail-photo{height:260px}.detail-info{padding:22px}.note-groups{grid-template-columns:1fr}.arrow{width:34px;height:34px}.cart{width:100%}}
 @media(max-width:390px){.grid{grid-template-columns:1fr}.photo{height:300px}}
 .admin-delete-btn{margin:8px 0 0 8px;border:1px solid #e1b7b7;background:#fff;color:#a44;border-radius:9px;padding:8px 12px;font-weight:800;cursor:pointer}
+
+.checkout-simple-wrap{grid-template-columns:minmax(0,760px) minmax(280px,360px);align-items:start}.checkout-form-simple{margin-bottom:22px}.checkout-simple .payment-note{margin-top:12px}.summary-item strong{display:block;margin-top:4px;font-size:13px}.cart-item-media{min-width:0}.cart-item img{display:block}
+@media(max-width:700px){.topbar{padding:0 14px}.checkout-top{height:62px;padding:0 14px}.checkout-top .secure{display:none}.checkout-wrap{width:min(94vw,600px);margin:18px auto 35px;display:block}.checkout-main,.checkout-summary{padding:18px;border-radius:16px}.checkout-summary{margin-top:14px;position:static}.form-grid{grid-template-columns:1fr;gap:12px}.form-grid label.full{grid-column:auto}.step-title h2{font-size:21px}.checkout-brand{font-size:12px}.cart{width:min(100vw,430px);padding:18px}.cart-item{grid-template-columns:50px minmax(0,1fr);gap:9px}.cart-item .remove{grid-column:2;justify-self:start}.cart-thumb{width:50px;height:62px}.cart-footer{padding-bottom:max(8px,env(safe-area-inset-bottom))}.admin-wrap{width:94vw}.admin-tabs{overflow-x:auto;white-space:nowrap}.admin-catalog-grid{grid-template-columns:1fr !important}}
+</style>
+<style>
+.order-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px}.admin-delete-btn{border:1px solid #b42318;background:#fff;color:#b42318;border-radius:8px;padding:7px 10px;cursor:pointer;font-weight:800}.admin-delete-btn:hover{background:#fff1f0}.new-badge{display:inline-flex;align-items:center;justify-content:center;margin-left:6px;padding:2px 7px;border-radius:999px;background:#b42318;color:#fff;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+</style>
+
+<style>
+/* Refuerzo móvil para iPhone/Android */
+html,body{max-width:100%;overflow-x:hidden}
+img{max-width:100%}
+button,input,select,textarea{font-size:16px}
+@media(max-width:700px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important}
+  .card{min-width:0;overflow:hidden}
+  .card .photo{width:100%;height:210px;object-fit:cover}
+  .card .body{padding:12px}
+  .card h3{font-size:15px;line-height:1.25}
+  .card-bottom{display:grid !important;grid-template-columns:1fr !important;gap:8px !important}
+  .card-bottom button{width:100%}
+  .cart{width:100vw;max-width:100vw;padding:16px}
+  .cart-item{grid-template-columns:52px minmax(0,1fr) !important;align-items:start}
+  .cart-item> .remove{grid-column:2}
+  .checkout-wrap{width:94vw !important}
+}
+@media(max-width:420px){
+  .grid{grid-template-columns:1fr !important}
+  .card .photo{height:260px}
+}
+</style>
+
+<style id="mobile-final-fix">
+*{-webkit-tap-highlight-color:transparent}
+body{min-width:0}
+.grid{width:100%}
+@media(max-width:700px){
+ .catalog{padding:34px 14px 60px}
+ .head{align-items:flex-start;flex-direction:column;gap:8px}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:12px !important}
+ .card{width:100%;min-width:0;border-radius:14px}
+ .card .photo{height:190px;width:100%;object-fit:contain;background:var(--cream)}
+ .card .body{padding:11px}
+ .card .tag{font-size:8px;letter-spacing:.08em}
+ .card h3{font-size:16px;margin:6px 0}
+ .notes-short{font-size:11px;min-height:0;line-height:1.35}
+ .card-bottom{display:grid !important;grid-template-columns:1fr !important;align-items:stretch !important}
+ .card-bottom .price{font-size:14px}
+ .card-bottom button{width:100%;min-height:38px}
+ .cart{width:100vw;right:0;padding:16px;}
+ .cart-item{grid-template-columns:50px minmax(0,1fr) !important;}
+ .cart-item .remove{grid-column:2;justify-self:start}
+ .promo-layout{flex-direction:column;gap:8px}.promo-product-img{margin:0;width:110px;height:130px}.slide{padding:34px 42px;min-height:430px}.promo h1{font-size:38px}
+ .modal{width:96vw;max-height:92vh;border-radius:18px}.modal-content{grid-template-columns:1fr}.detail-photo{min-height:260px;max-height:320px}.detail-info{padding:18px}.note-groups{grid-template-columns:1fr}
+ .admin-head{align-items:flex-start;flex-direction:column}.admin-grid{grid-template-columns:1fr}.admin-catalog-grid{grid-template-columns:1fr !important}.admin-notes-grid{grid-template-columns:1fr}.size-row{grid-template-columns:1fr !important}.size-row button{width:100%}
+}
+@media(max-width:420px){.grid{grid-template-columns:1fr !important}.card .photo{height:250px}}
 </style>
 </head>
 <body>
 <header class="topbar">
   <button class="icon-btn" aria-label="Abrir menú" onclick="openDrawer()"><span class="hamb"><i></i><i></i><i></i></span></button>
-  <a href="#" class="brand">AROMAS TANDIL<small>PERFUMERÍA</small></a>
+  <a href="#" class="brand">VERDE<small>PERFUMERÍA</small></a>
   <button class="icon-btn bag" aria-label="Abrir carrito" onclick="openCart()">🛍<span class="bag-count" id="bagCount">0</span></button>
 </header>
 
@@ -108,7 +164,7 @@ footer{background:var(--navy);color:#dce5e1;text-align:center;padding:30px 20px;
 </section>
 </main>
 
-<footer><span id="footerStoreName">AROMAS TANDIL</span> · <span id="footerTagline">Fragancias para cada estación</span><button class="admin-toggle" type="button" onclick="openAdmin()">Administrar</button></footer>
+<footer><span id="footerStoreName">VERDE PERFUMERÍA</span> · <span id="footerTagline">Fragancias para cada estación</span><button class="admin-toggle" type="button" onclick="openAdmin()">Administrar</button></footer>
 
 <div class="drawer-back" id="drawerBack" onclick="closeDrawer()"></div>
 <aside class="drawer" id="drawer">
@@ -139,7 +195,7 @@ footer{background:var(--navy);color:#dce5e1;text-align:center;padding:30px 20px;
 
 <div class="admin-screen" id="adminScreen">
   <div class="admin-top">
-    <div class="admin-brand">AROMAS TANDIL <span>ADMIN</span></div>
+    <div class="admin-brand">VERDE <span>ADMIN</span></div>
     <button class="admin-close" onclick="closeAdmin()">Cerrar</button>
   </div>
 
@@ -161,15 +217,16 @@ footer{background:var(--navy);color:#dce5e1;text-align:center;padding:30px 20px;
     <div class="admin-tabs">
       <button class="admin-tab active" onclick="adminTab('products',this)">Productos</button>
       <button class="admin-tab" onclick="adminTab('promos',this)">Promociones</button>
-      <button class="admin-tab" onclick="adminTab('orders',this)">Pedidos</button>
+      <button class="admin-tab" id="ordersAdminTab" onclick="adminTab('orders',this)">Pedidos <span id="newOrdersBadge" class="new-badge" style="display:none">Nuevo</span></button>
       <button class="admin-tab" onclick="adminTab('questions',this)">Preguntas</button>
-      <button class="admin-tab" onclick="adminTab('store',this)">Tienda</button><button class="admin-tab" onclick="adminTab('payments',this)">Pagos</button>
+      <button class="admin-tab" onclick="adminTab('store',this)">Tienda</button>
     </div>
 
     <div id="adminProducts">
       <div class="admin-card">
         <h3>Editar catálogo</h3>
         <p class="admin-note">Acá ves los perfumes prácticamente igual que los clientes. Entrá en <b>Editar</b> para cambiar sus datos y guardar los cambios.</p>
+        <button class="admin-save" style="margin-top:10px" onclick="addNewAdminProduct()">＋ Agregar nuevo producto</button>
         <div class="admin-catalog-grid" id="adminProductList"></div>
       </div>
     </div>
@@ -197,28 +254,14 @@ footer{background:var(--navy);color:#dce5e1;text-align:center;padding:30px 20px;
       </div>
     </div>
 
-    <div id="adminPayments" style="display:none">
-      <div class="admin-card">
-        <h3>Configurar cobros</h3>
-        <p class="admin-note">Podés cargar un link de pago de Mercado Pago y otro de Naranja X. Al confirmar un pedido, el cliente verá el botón para pagar. Estos links son externos y deben ser creados en la cuenta del comercio.</p>
-        <div class="admin-grid">
-          <label>Link de pago de Mercado Pago<input id="mpPaymentLink" type="url" placeholder="https://mpago.la/..." /></label>
-          <label>Link de pago de Naranja X<input id="nxPaymentLink" type="url" placeholder="https://..." /></label>
-          <label class="full">Instrucciones de transferencia<textarea id="transferInstructions" placeholder="CBU/CVU, alias y titular..."></textarea></label>
-        </div>
-        <button class="admin-save" onclick="savePaymentSettings()">Guardar medios de pago</button>
-        <div class="admin-save-msg" id="paymentMsg"></div>
-        <p class="admin-note" style="margin-top:12px"><b>Importante:</b> para cobrar automáticamente el total exacto de cada carrito con Mercado Pago hace falta una integración de servidor (Checkout Pro/Preferences API). No pongas un Access Token privado dentro de este HTML.</p>
-      </div>
-    </div>
-
     <div id="adminStore" style="display:none">
       <div class="admin-card">
         <h3>Personalizar tienda</h3>
         <div class="admin-grid">
-          <label>Nombre de la tienda<input id="storeName" value="AROMAS TANDIL"></label>
+          <label>Nombre de la tienda<input id="storeName" value="VERDE PERFUMERÍA"></label>
           <label>Texto pequeño<input id="storeTagline" value="Fragancias para cada estación"></label>
           <label class="full">Texto del pie de página<textarea id="storeFooter">Fragancias seleccionadas para cada estación.</textarea></label>
+          <label class="full">WhatsApp de la marca<input id="whatsappNumber" value="" inputmode="tel" placeholder="Ej. 5492494000000"><small style="display:block;margin-top:5px;color:var(--muted)">Poné el número con código de país. Para Argentina: 549 + código de área + número.</small></label>
         </div>
         <button class="admin-save" onclick="saveStoreSettings()">Guardar personalización</button>
         <div class="admin-save-msg" id="storeMsg"></div>
@@ -240,55 +283,23 @@ footer{background:var(--navy);color:#dce5e1;text-align:center;padding:30px 20px;
 <div class="checkout-screen" id="checkoutScreen">
   <div class="checkout-top">
     <button class="checkout-back" onclick="closeCheckout()">← Volver al carrito</button>
-    <div class="checkout-brand">AROMAS <span>CHECKOUT</span></div>
-    <div class="secure">🔒 Compra segura</div>
+    <div class="checkout-brand">VERDE <span>PEDIDO</span></div>
+    <div class="secure">💬 WhatsApp</div>
   </div>
-  <div class="checkout-wrap">
-    <div class="checkout-main">
-      <div class="step-title"><span>1</span><div><h2>Datos de contacto</h2><p>Los necesitamos para enviarte la confirmación del pedido.</p></div></div>
-      <div class="form-grid">
-        <label>Nombre y apellido<input id="coName" required autocomplete="name" placeholder="Ej. Juan Pérez"></label>
+  <div class="checkout-wrap checkout-simple-wrap">
+    <div class="checkout-main checkout-simple">
+      <div class="step-title"><span>1</span><div><h2>Datos para tu pedido</h2><p>Solo necesitamos estos dos datos para preparar tu pedido por WhatsApp.</p></div></div>
+      <div class="form-grid checkout-form-simple">
+        <label>Nombre del cliente<input id="coName" required autocomplete="name" placeholder="Ej. Juan Pérez"></label>
         <label>Teléfono<input id="coPhone" required autocomplete="tel" placeholder="Ej. 249 400-0000"></label>
-        <label class="full">Email<input id="coEmail" type="email" required autocomplete="email" placeholder="Ej. juan@email.com"></label>
       </div>
-
-      <div class="step-title"><span>2</span><div><h2>Dirección de entrega</h2><p>Completá los datos del domicilio donde querés recibir el pedido.</p></div></div>
-      <div class="form-grid">
-        <label>Provincia
-          <select id="coProvince"><option>Buenos Aires</option><option>CABA</option><option>Córdoba</option><option>Santa Fe</option><option>Mendoza</option><option>Otra provincia</option></select>
-        </label>
-        <label>Localidad / ciudad<input id="coCity" required placeholder="Ej. Tandil"></label>
-        <label class="full">Calle y número<input id="coAddress" required autocomplete="street-address" placeholder="Ej. Av. ... 1234"></label>
-        <label>Código postal<input id="coPostal" required inputmode="numeric" autocomplete="postal-code" placeholder="Ej. 7000"></label>
-        <label>Piso / departamento <span class="optional">opcional</span><input id="coFloor" placeholder="Ej. 2° B"></label>
-        <label class="full">Indicaciones para la entrega <span class="optional">opcional</span><textarea id="coNotes" placeholder="Ej. tocar timbre, dejar con encargado, etc."></textarea></label>
-      </div>
-
-      <div class="step-title"><span>3</span><div><h2>Envío</h2><p>Elegí cómo querés recibir tu pedido.</p></div></div>
-      <div class="choice-list">
-        <label class="choice"><input type="radio" name="shipping" value="Envío estándar" checked><div><b>Envío estándar</b><small>Entrega a domicilio · costo calculado al finalizar</small></div><strong id="shippingPrice">A calcular</strong></label>
-        <label class="choice"><input type="radio" name="shipping" value="Retiro"><div><b>Retiro</b><small>Coordinamos el punto de retiro</small></div><strong>Gratis</strong></label>
-      </div>
-
-      <div class="step-title"><span>4</span><div><h2>Forma de pago</h2><p>Elegí el medio con el que querés abonar.</p></div></div>
-      <div class="choice-list">
-        <label class="choice"><input type="radio" name="payment" value="Mercado Pago" checked><div><b>Mercado Pago</b><small>Te derivamos al pago seguro para completar la operación.</small></div><span>MP</span></label>
-        <label class="choice"><input type="radio" name="payment" value="Naranja X"><div><b>Naranja X</b><small>Pagá desde el link de pago del comercio.</small></div><span>NX</span></label>
-        <label class="choice"><input type="radio" name="payment" value="Tarjeta"><div><b>Tarjeta de crédito o débito</b><small>El pago se procesa mediante el proveedor de pagos.</small></div><span>💳</span></label>
-        <label class="choice"><input type="radio" name="payment" value="Transferencia"><div><b>Transferencia bancaria</b><small>Después de confirmar te mostramos los datos para transferir.</small></div><span>🏦</span></label>
-      </div>
-
-      <label class="terms"><input id="coTerms" type="checkbox"> Acepto los términos de compra y la política de privacidad.</label>
-      <button class="finish-order" onclick="finishOrder()">Confirmar pedido</button>
-      <p class="payment-note">En esta demo no se solicitan números de tarjeta ni códigos de seguridad. Para una tienda real, el pago debe procesarse mediante una pasarela de pago.</p>
+      <button class="finish-order" onclick="finishOrder()">Continuar con el pedido → WhatsApp</button>
+      <p class="payment-note">Al continuar, tu pedido se guarda y se abre el WhatsApp de la marca con la información del pedido.</p>
     </div>
-
     <aside class="checkout-summary">
       <h3>Resumen del pedido</h3>
       <div id="checkoutItems"></div>
-      <div class="summary-line"><span>Subtotal</span><b id="checkoutSubtotal">$0</b></div>
-      <div class="summary-line"><span>Envío</span><b id="checkoutShipping">A calcular</b></div>
-      <div class="summary-total"><span>Total</span><strong id="checkoutTotal">$0</strong></div>
+      <div class="summary-line"><span>Total</span><b id="checkoutTotal">$0</b></div>
     </aside>
   </div>
 </div>
@@ -296,87 +307,6 @@ footer{background:var(--navy);color:#dce5e1;text-align:center;padding:30px 20px;
 <div class="toast" id="toast"></div>
 
 <script>
-// AROMAS TANDIL · Supabase
-const SUPABASE_URL = "https://qibhaiowsgqgjzpvelww.supabase.co";
-const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_gL4bQXTww3v_EcxqbakqUQ_RsAypNYU";
-
-async function supabaseRequest(path, options={}) {
-  const headers = {
-    apikey: SUPABASE_PUBLISHABLE_KEY,
-    Authorization: `Bearer ${SUPABASE_PUBLISHABLE_KEY}`,
-    "Content-Type": "application/json",
-    ...(options.headers || {})
-  };
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {...options, headers});
-  if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Supabase ${res.status}: ${body}`);
-  }
-  if (res.status === 204) return null;
-  const text = await res.text();
-  return text ? JSON.parse(text) : null;
-}
-
-function dbRowToProduct(row){
-  let presentation = row.presentation;
-  if(typeof presentation === "string"){ try{ presentation=JSON.parse(presentation); }catch(e){} }
-  const image = Array.isArray(row.images) ? (row.images[0] || "") : (typeof row.images === "string" ? row.images : (presentation?.image || ""));
-  return {
-    id: row.id,
-    name: row.name || "",
-    brand: row.brand || "",
-    type: presentation?.type || row.type || "",
-    season: row.season || "Primavera",
-    price: Number(presentation?.price ?? row.price ?? 0),
-    image,
-    notes: {salida: row.notes_top || [], corazon: row.notes_heart || [], fondo: row.notes_base || []},
-    desc: row.description || "",
-    source: presentation?.source || row.source || "",
-    _editing: false
-  };
-}
-
-function productToDbRow(p){
-  return {
-    id: p.id,
-    name: p.name,
-    brand: p.brand,
-    description: p.desc || "",
-    season: p.season || "Primavera",
-    notes_top: p.notes?.salida || [],
-    notes_heart: p.notes?.corazon || [],
-    notes_base: p.notes?.fondo || [],
-    images: p.image ? [p.image] : [],
-    presentation: JSON.stringify({type:p.type || "", price:Number(p.price)||0, source:p.source || ""}),
-    active: true,
-    updated_up: new Date().toISOString()
-  };
-}
-
-async function loadProductsFromSupabase(){
-  try {
-    const rows = await supabaseRequest("products?select=*&active=eq.true&order=id.asc");
-    if(Array.isArray(rows) && rows.length){
-      products.splice(0, products.length, ...rows.map(dbRowToProduct));
-      localStorage.setItem("aromas_tandil_products", JSON.stringify(products));
-      return true;
-    }
-  } catch(err) {
-    console.warn("No se pudieron cargar productos desde Supabase:", err);
-  }
-  return false;
-}
-
-async function saveProductsToSupabase(){
-  const rows = products.map(productToDbRow);
-  if(!rows.length) return;
-  await supabaseRequest("products?on_conflict=id", {
-    method: "POST",
-    headers: {Prefer: "resolution=merge-duplicates,return=minimal"},
-    body: JSON.stringify(rows)
-  });
-}
-
 const products=[
 {id:1,name:"Bleu de Chanel Eau de Parfum",brand:"CHANEL",type:"Aromático amaderado",season:"Otoño",price:316300,image:"https://www.chanel.com/puls-img/1715681207950-editopush974x1298edpjpg_1298x974.jpg",notes:{salida:["Cítricos"],corazon:["Cedro","Notas ambarinas"],fondo:["Sándalo","Maderas almizcladas"]},desc:"Una fragancia aromática amaderada con profundidad, elegancia y un carácter versátil.",source:"https://www.chanel.com/ar/perfumes/p/107360/bleu-de-chanel-eau-de-parfum-vaporizador/"},
 {id:2,name:"Sauvage Eau de Toilette",brand:"DIOR",type:"Fresco · cítrico · amaderado",season:"Primavera",price:245000,image:"https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dwfc145bb2/Y0685240/Y0685240_F068524009_E01_RHC.jpg?sw=800",notes:{salida:["Bergamota de Calabria","Pimienta de Sichuan"],corazon:["Elemí"],fondo:["Ambroxan","Maderas"]},desc:"Una composición fresca y cítrica anclada en ambroxan, elemí y maderas.",source:"https://www.dior.com/en_us/beauty/products/sauvage-eau-de-toilette-F068522009.html"},
@@ -387,19 +317,44 @@ const products=[
 {id:7,name:"Sauvage Eau de Toilette",brand:"DIOR",type:"Fresco · cítrico · amaderado",season:"Verano",price:245000,image:"https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dwfc145bb2/Y0685240/Y0685240_F068524009_E01_RHC.jpg?sw=800",notes:{salida:["Bergamota de Calabria","Pimienta de Sichuan"],corazon:["Elemí"],fondo:["Ambroxan","Maderas"]},desc:"Una opción fresca y versátil para días cálidos.",source:"https://www.dior.com/en_us/beauty/products/sauvage-eau-de-toilette-F068522009.html"},
 {id:8,name:"Le Male Le Parfum",brand:"JEAN PAUL GAULTIER",type:"Ámbar amaderado",season:"Otoño",price:275000,image:"https://medias.jeanpaulgaultier.com/cdn-cgi/image/width%3D3840%2Cquality%3D90%2Cformat%3Davif/medias/sys_master/images/h9d/h3f/10688839843870/flacon-pdp-le-male-lp-jean-paul-gaultier/flacon-pdp-le-male-lp-jean-paul-gaultier.png",notes:{salida:["Cardamomo"],corazon:["Lavanda","Lirio"],fondo:["Vainilla"]},desc:"Un perfil cálido y especiado que funciona especialmente bien en temperaturas más frescas.",source:"https://www.jeanpaulgaultier.com/ww/es/p/linea-le-male/le-male-le-parfum-eau-de-parfum-intenso-000000000065156533"}
 ];
+products.forEach(p=>{if(!Array.isArray(p.sizes)||!p.sizes.length)p.sizes=[{label:"100 ml",price:Number(p.price)||0}]});
 
 let currentSlide=0, slideTimer;
-let cart=JSON.parse(localStorage.getItem("aromas_tandil_cart")||"[]");
-let questions=JSON.parse(localStorage.getItem("aromas_tandil_questions")||"[]");
+let cart=JSON.parse(localStorage.getItem("verde_cart")||"[]");
+let questions=JSON.parse(localStorage.getItem("verde_questions")||"[]");
 
 function money(n){return "$"+n.toLocaleString("es-AR")}
+function normalizeProduct(p,index){
+ if(!p||typeof p!="object") return null;
+ p.id=Number(p.id)||index+1;
+ p.name=String(p.name||"Nuevo perfume");
+ p.brand=String(p.brand||"");
+ p.type=String(p.type||"");
+ p.season=String(p.season||"Verano");
+ p.price=Number(p.price)||0;
+ p.image=typeof p.image==="string"?p.image:"";
+ p.desc=String(p.desc||"");
+ p.source=typeof p.source==="string"?p.source:"";
+ p.notes=p.notes&&typeof p.notes==="object"?p.notes:{};
+ p.notes.salida=Array.isArray(p.notes.salida)?p.notes.salida.map(String):[];
+ p.notes.corazon=Array.isArray(p.notes.corazon)?p.notes.corazon.map(String):[];
+ p.notes.fondo=Array.isArray(p.notes.fondo)?p.notes.fondo.map(String):[];
+ p.sizes=Array.isArray(p.sizes)?p.sizes.filter(x=>x&&typeof x==="object").map(x=>({label:String(x.label||""),price:Number(x.price)||0})):[];
+ if(!p.sizes.length) p.sizes=[{label:"100 ml",price:p.price}];
+ return p;
+}
+products.forEach((p,i)=>normalizeProduct(p,i));
 function render(items=products){
  const grid=document.getElementById("grid");
- grid.innerHTML=items.map(p=>`<article class="card">
-  <img class="photo" src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#cad2c5,#52796f)';this.removeAttribute('src')">
-  <div class="body"><div class="tag">${p.brand} · ${p.season}</div><h3>${p.name}</h3><div class="notes-short">${Object.values(p.notes).flat().join(" · ")}</div>
-  <div class="card-bottom"><span class="price">${money(p.price)}</span><button class="detail-btn" onclick="openProduct(${p.id})">Ver detalle</button><button class="primary" onclick="addCart(${p.id})">Agregar</button></div></div>
- </article>`).join("");
+ if(!grid)return;
+ const safeItems=(Array.isArray(items)?items:products).map((p,i)=>normalizeProduct(p,i)).filter(Boolean);
+ if(!safeItems.length){grid.innerHTML='<div class="empty" style="grid-column:1/-1">No hay perfumes cargados.</div>';return}
+ grid.innerHTML=safeItems.map(p=>{
+   const notes=[...p.notes.salida,...p.notes.corazon,...p.notes.fondo].join(" · ")||"Fragancia disponible";
+   const sizes=p.sizes.map(x=>escapeHtml(x.label)).filter(Boolean).join(" · ")||"Consultar";
+   const image=p.image?`<img class="photo" src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">`:`<div class="photo" style="display:none"></div>`;
+   return `<article class="card">${image}<div class="photo photo-fallback" style="display:${p.image?'none':'block'};display:grid;place-items:center;font-size:42px">🧴</div><div class="body"><div class="tag">${escapeHtml(p.brand)} · ${escapeHtml(p.season)}</div><h3>${escapeHtml(p.name)}</h3><div class="notes-short">${escapeHtml(notes)}</div><div class="notes-short" style="margin-top:8px"><b>Disponible:</b> ${sizes}</div><div class="card-bottom"><span class="price">${money(p.price)}</span><button class="detail-btn" onclick="openProduct(${p.id})">Ver detalle</button><button class="primary" onclick="addCart(${p.id})">Agregar</button></div></div></article>`;
+ }).join("");
 }
 function openProduct(id){
  const p=products.find(x=>x.id===id);
@@ -408,20 +363,31 @@ function openProduct(id){
  <div class="detail-info"><div class="tag">${p.brand} · ${p.type} · Estación sugerida: ${p.season}</div><h2>${p.name}</h2><p class="detail-desc">${p.desc}</p>
  <div class="note-groups"><div class="note-group"><b>Salida</b><ul>${p.notes.salida.map(x=>`<li>${x}</li>`).join("")}</ul></div><div class="note-group"><b>Corazón</b><ul>${p.notes.corazon.map(x=>`<li>${x}</li>`).join("")}</ul></div><div class="note-group"><b>Fondo</b><ul>${p.notes.fondo.map(x=>`<li>${x}</li>`).join("")}</ul></div></div>
  <div class="source">Notas consultadas en la página oficial de la marca: <a href="${p.source}" target="_blank" rel="noopener">ver fuente</a></div>
- <div class="detail-actions"><button class="primary" onclick="addCart(${p.id})">Agregar al carrito · ${money(p.price)}</button></div>
+ <div class="detail-actions">${(p.sizes||[]).length?`<label style="display:block;margin-bottom:10px;font-size:12px;font-weight:800">Cantidad / presentación<select id="sizeSelect${p.id}" style="width:100%;margin-top:6px;padding:10px;border:1px solid #d9e1dc;border-radius:10px">${p.sizes.map((x,i)=>`<option value="${i}">${escapeHtml(x.label)} · ${money(Number(x.price)||0)}</option>`).join("")}</select></label>`:""}<button class="primary" onclick="addCart(${p.id},document.getElementById('sizeSelect${p.id}')?.value)">Agregar al carrito</button></div>
  <div class="questions"><h3>¿Tenés una pregunta?</h3><p class="detail-desc">Podés preguntar por este perfume. En esta versión las preguntas se guardan en este navegador para que puedas probar el sistema.</p>
  <form class="question-form" onsubmit="submitQuestion(event,${p.id})"><input id="qName" placeholder="Tu nombre (opcional)"><textarea id="qText" required placeholder="Escribí tu pregunta..."></textarea><button class="primary">Enviar pregunta</button></form>
  <div class="qa">${qs.length?qs.map(q=>`<div class="qa-item"><div class="qa-q">❓ ${escapeHtml(q.text)}</div>${q.answer?`<div class="qa-a">Respuesta: ${escapeHtml(q.answer)}</div>`:"<div class='source'>Pendiente de respuesta</div>"}</div>`).join(""):"<div class='source'>Todavía no hay preguntas respondidas.</div>"}</div></div></div>`;
  document.getElementById("modalBack").classList.add("open");document.getElementById("productModal").classList.add("open");
 }
-function submitQuestion(e,id){e.preventDefault();const text=document.getElementById("qText").value.trim();const name=document.getElementById("qName").value.trim()||"Cliente";if(!text)return;questions.push({id:Date.now(),productId:id,name,text,answer:""});localStorage.setItem("aromas_tandil_questions",JSON.stringify(questions));showToast("Pregunta enviada");openProduct(id)}
+function submitQuestion(e,id){e.preventDefault();const text=document.getElementById("qText").value.trim();const name=document.getElementById("qName").value.trim()||"Cliente";if(!text)return;questions.push({id:Date.now(),productId:id,name,text,answer:""});localStorage.setItem("verde_questions",JSON.stringify(questions));showToast("Pregunta enviada");openProduct(id)}
 function escapeHtml(s){return s.replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
 function closeProduct(){document.getElementById("modalBack").classList.remove("open");document.getElementById("productModal").classList.remove("open")}
-function addCart(id){const found=cart.find(x=>x.id===id);if(found)found.qty++;else cart.push({id,qty:1});saveCart();showToast("Perfume agregado al carrito");updateCart();openCart()}
-function saveCart(){localStorage.setItem("aromas_tandil_cart",JSON.stringify(cart))}
-function updateCart(){document.getElementById("bagCount").textContent=cart.reduce((a,x)=>a+x.qty,0);const box=document.getElementById("cartItems");if(!cart.length){box.innerHTML="<div class='empty'>Tu carrito está vacío.<br>Agregá un perfume para verlo acá.</div>";document.getElementById("cartTotal").textContent="$0";return}let total=0;box.innerHTML=cart.map(x=>{const p=products.find(y=>y.id===x.id);const unit=x.promo?p.price*(1-(x.discount||0)):p.price;total+=unit*x.qty;const promo=x.promo?`<p style="color:var(--green);font-weight:800">${x.combo||"Oferta promocional"} · ${Math.round((x.discount||0)*100)}% OFF</p>`:"";return `<div class="cart-item"><img class="cart-thumb" src="${p.image}" alt="${p.name}"><div><h4>${p.name}</h4><p>${money(unit)}${x.promo?` <del style="opacity:.5">${money(p.price)}</del>`:""}</p>${promo}<div class="qty"><button onclick="changeQty(${p.id},-1)">−</button><b>${x.qty}</b><button onclick="changeQty(${p.id},1)">+</button></div></div><button class="remove" onclick="removeCart(${p.id})">Quitar</button></div>`}).join("");document.getElementById("cartTotal").textContent=money(total)}
-function changeQty(id,n){const x=cart.find(y=>y.id===id);if(!x)return;x.qty+=n;if(x.qty<=0)cart=cart.filter(y=>y.id!==id);saveCart();updateCart()}
-function removeCart(id){cart=cart.filter(x=>x.id!==id);saveCart();updateCart()}
+function addCart(id,sizeIndex){const p=products.find(x=>x.id===id);if(!p)return;const si=(sizeIndex!==undefined&&sizeIndex!==null&&sizeIndex!=="")?Number(sizeIndex):null;const size=(si!==null&&p.sizes?.[si])?p.sizes[si]:null;const key=String(id)+"|"+(size?size.label:"");const found=cart.find(x=>x.key===key);if(found)found.qty++;else cart.push({id,qty:1,sizeLabel:size?.label||"",unitPrice:size?Number(size.price):Number(p.price),productName:p.name,productImage:p.image,key});saveCart();showToast("Producto agregado al carrito");updateCart();openCart()}
+function saveCart(){localStorage.setItem("verde_cart",JSON.stringify(cart))}
+function updateCart(){
+ const count=cart.reduce((a,x)=>a+Number(x.qty||1),0);document.getElementById("bagCount").textContent=count;
+ const box=document.getElementById("cartItems");
+ if(!cart.length){box.innerHTML="<div class='empty'>Tu carrito está vacío.<br>Agregá un perfume para verlo acá.</div>";document.getElementById("cartTotal").textContent="$0";return}
+ let total=0;
+ box.innerHTML=cart.map((x,i)=>{
+   const p=products.find(y=>y.id===x.id)||{};const name=x.productName||p.name||"Producto";const image=x.productImage||p.image||"";
+   const base=Number(x.unitPrice??p.price??0);const unit=x.promo?base*(1-(x.discount||0)):base;const qty=Number(x.qty||1);const sub=unit*qty;total+=sub;
+   return `<div class="cart-item"><div class="cart-item-media">${image?`<img class="cart-thumb" src="${escapeHtml(image)}" alt="${escapeHtml(name)}">`:""}</div><div><h4>${escapeHtml(name)}</h4><p>${x.sizeLabel?escapeHtml(x.sizeLabel)+" · ":""}${money(unit)} c/u</p><p><b>Subtotal: ${money(sub)}</b></p><div class="qty"><button onclick="changeQty(${i},-1)">−</button><b>${qty}</b><button onclick="changeQty(${i},1)">+</button></div></div><button class="remove" onclick="removeCart(${i})">Quitar</button></div>`;
+ }).join("");
+ document.getElementById("cartTotal").textContent=money(total);
+}
+function changeQty(index,n){const x=cart[index];if(!x)return;x.qty+=n;if(x.qty<=0)cart.splice(index,1);saveCart();updateCart()}
+function removeCart(index){cart.splice(index,1);saveCart();updateCart()}
 function openCart(){document.getElementById("cart").classList.add("open");document.getElementById("cartBack").classList.add("open");updateCart()}
 function closeCart(){document.getElementById("cart").classList.remove("open");document.getElementById("cartBack").classList.remove("open")}
 function checkout(){if(!cart.length){showToast("El carrito está vacío");return}showToast("El pedido está listo para conectar con WhatsApp o Mercado Pago")}
@@ -449,7 +415,7 @@ function addPromoCombo(name,ids,discount){
 
 
 const DEFAULT_ADMIN_PIN="4826";
-let ADMIN_PIN=localStorage.getItem("aromas_tandil_admin_pin")||DEFAULT_ADMIN_PIN;
+let ADMIN_PIN=localStorage.getItem("verde_admin_pin")||DEFAULT_ADMIN_PIN;
 let adminLogged=false;
 let adminPromos=[
  {title:"Bleu de Chanel — 15% OFF",discount:"15%",kind:"Perfume individual",productId:1,comboIds:[1],oldPrice:316300,description:"Bleu de Chanel Eau de Parfum con una promoción especial."},
@@ -457,10 +423,10 @@ let adminPromos=[
  {title:"Combo Clásicos — 15% OFF",discount:"15%",kind:"Combo exclusivo",productId:1,comboIds:[1,4],oldPrice:536300,description:"Una combinación clásica con descuento."},
  {title:"Sauvage EDT — 10% OFF",discount:"10%",kind:"Perfume individual",productId:2,comboIds:[2],oldPrice:245000,description:"Sauvage Eau de Toilette con descuento especial."}
 ];
-function changeAdminPin(){const a=document.getElementById("newAdminPin").value.trim(),b=document.getElementById("newAdminPin2").value.trim();if(!/^\d{4,8}$/.test(a)){document.getElementById("pinMsg").textContent="El PIN debe tener entre 4 y 8 números.";return}if(a!==b){document.getElementById("pinMsg").textContent="Los PIN no coinciden.";return}ADMIN_PIN=a;localStorage.setItem("aromas_tandil_admin_pin",a);document.getElementById("newAdminPin").value="";document.getElementById("newAdminPin2").value="";document.getElementById("pinMsg").textContent="PIN cambiado correctamente.";showToast("PIN actualizado")}
-function savePaymentSettings(){const data={mp:document.getElementById("mpPaymentLink").value.trim(),nx:document.getElementById("nxPaymentLink").value.trim(),transfer:document.getElementById("transferInstructions").value.trim()};if(data.mp&&!/^https?:\/\//i.test(data.mp)||data.nx&&!/^https?:\/\//i.test(data.nx)){document.getElementById("paymentMsg").textContent="Los links deben empezar con https://";return}localStorage.setItem("aromas_tandil_payments",JSON.stringify(data));document.getElementById("paymentMsg").textContent="Medios de pago guardados.";showToast("Medios de pago actualizados")}
-function loadPaymentSettings(){const d=JSON.parse(localStorage.getItem("aromas_tandil_payments")||"{}");if(document.getElementById("mpPaymentLink")){document.getElementById("mpPaymentLink").value=d.mp||"";document.getElementById("nxPaymentLink").value=d.nx||"";document.getElementById("transferInstructions").value=d.transfer||""}}
-function getPaymentSettings(){return JSON.parse(localStorage.getItem("aromas_tandil_payments")||"{}")}
+function changeAdminPin(){const a=document.getElementById("newAdminPin").value.trim(),b=document.getElementById("newAdminPin2").value.trim();if(!/^\d{4,8}$/.test(a)){document.getElementById("pinMsg").textContent="El PIN debe tener entre 4 y 8 números.";return}if(a!==b){document.getElementById("pinMsg").textContent="Los PIN no coinciden.";return}ADMIN_PIN=a;localStorage.setItem("verde_admin_pin",a);document.getElementById("newAdminPin").value="";document.getElementById("newAdminPin2").value="";document.getElementById("pinMsg").textContent="PIN cambiado correctamente.";showToast("PIN actualizado")}
+function savePaymentSettings(){const data={mp:document.getElementById("mpPaymentLink").value.trim(),nx:document.getElementById("nxPaymentLink").value.trim(),transfer:document.getElementById("transferInstructions").value.trim()};if(data.mp&&!/^https?:\/\//i.test(data.mp)||data.nx&&!/^https?:\/\//i.test(data.nx)){document.getElementById("paymentMsg").textContent="Los links deben empezar con https://";return}localStorage.setItem("verde_payments",JSON.stringify(data));document.getElementById("paymentMsg").textContent="Medios de pago guardados.";showToast("Medios de pago actualizados")}
+function loadPaymentSettings(){const d=JSON.parse(localStorage.getItem("verde_payments")||"{}");if(document.getElementById("mpPaymentLink")){document.getElementById("mpPaymentLink").value=d.mp||"";document.getElementById("nxPaymentLink").value=d.nx||"";document.getElementById("transferInstructions").value=d.transfer||""}}
+function getPaymentSettings(){return JSON.parse(localStorage.getItem("verde_payments")||"{}")}
 function renderPromoCarousel(){const slides=document.getElementById("slides");if(!slides)return;slides.innerHTML=adminPromos.map((p,i)=>{const prod=products.find(x=>x.id===Number(p.productId))||products[0];const disc=Math.max(0,Math.min(99,parseFloat(p.discount)||0))/100;const combo=(p.comboIds||[]).filter(id=>products.some(x=>x.id===id));const ids=combo.length?combo:[prod.id];const unitTotal=ids.reduce((sum,id)=>sum+(products.find(x=>x.id===id)?.price||0),0);const old=p.oldPrice||unitTotal;const final=Math.round(old*(1-disc));const action=ids.length>1?`addPromoCombo(${JSON.stringify(p.title||"Promoción")},[${ids.join(",")}],${disc})`:`addPromoSingle(${ids[0]},${disc})`;return `<div class="slide"><div class="promo-layout"><div class="promo-copy"><div class="promo-kicker">${escapeHtml(p.kind||"Oferta exclusiva")}</div><h1>${escapeHtml(p.title||prod.name)}<br><span class="promo-discount">${escapeHtml(p.discount||"")}</span></h1><p>${escapeHtml(p.description||"")}</p><div class="promo-price"><del>${money(old)}</del> <strong>${money(final)}</strong> <span>${escapeHtml(p.discount||"")} OFF</span></div><button class="promo-cta" onclick='${action}'>Comprar con descuento</button></div><img class="promo-product-img" src="${escapeHtml(prod.image||"")}" alt="${escapeHtml(prod.name)}"></div></div>`}).join("");currentSlide=0;document.getElementById("slides").style.transform="translateX(0)";startSlides()}
 function openAdmin(){
  document.getElementById("adminScreen").classList.add("open");
@@ -474,14 +440,14 @@ function checkAdminPin(){
  if(pin===ADMIN_PIN){adminLogged=true;showAdminPanel();document.getElementById("adminPin").value=""}
  else {document.getElementById("adminError").textContent="PIN incorrecto.";document.getElementById("adminPin").select()}
 }
-function showAdminPanel(){document.getElementById("adminLogin").style.display="none";document.getElementById("adminPanel").classList.add("open");renderAdminProducts();renderAdminPromos();renderAdminOrders();renderAdminQuestions();loadPaymentSettings()}
+function showAdminPanel(){document.getElementById("adminLogin").style.display="none";document.getElementById("adminPanel").classList.add("open");renderAdminProducts();renderAdminPromos();renderAdminOrders();renderAdminQuestions()}
 function adminLogout(){adminLogged=false;document.getElementById("adminPanel").classList.remove("open");document.getElementById("adminLogin").style.display="block";document.getElementById("adminError").textContent="";document.getElementById("adminPin").value=""}
 function adminTab(tab,btn){
  document.querySelectorAll(".admin-tabs .admin-tab").forEach(x=>x.classList.remove("active"));
  if(btn)btn.classList.add("active");
- ["Products","Promos","Orders","Questions","Store","Payments"].forEach(x=>document.getElementById("admin"+x).style.display="none");
+ ["Products","Promos","Orders","Questions","Store"].forEach(x=>document.getElementById("admin"+x).style.display="none");
  document.getElementById("admin"+tab.charAt(0).toUpperCase()+tab.slice(1)).style.display="block";
- if(tab==="questions")renderAdminQuestions();
+ if(tab==="orders"){markOrdersAsSeen();renderAdminOrders()} if(tab==="questions")renderAdminQuestions();
 }
 function renderAdminProducts(){
  const box=document.getElementById("adminProductList");
@@ -491,6 +457,7 @@ function renderAdminProducts(){
      <div class="tag">${escapeHtml(p.brand||"")}</div>
      <h3>${escapeHtml(p.name)}</h3>
      <div class="notes-short">${escapeHtml(p.type||"")} · ${escapeHtml(p.season||"")}</div>
+     <div class="notes-short" style="margin-top:7px"><b>Presentaciones:</b> ${(p.sizes||[]).length?(p.sizes||[]).map(x=>escapeHtml(x.label)+(x.price!=null?" · "+money(Number(x.price)):"")).join(" · "):"No definidas"}</div>
      <div class="card-bottom"><span class="price">${money(p.price)}</span><span class="source">ID ${p.id}</span></div>
      <button class="admin-edit-btn" onclick="editAdminProduct(${p.id})">Editar producto</button>
    </div>
@@ -499,93 +466,92 @@ function renderAdminProducts(){
      <label>Marca<input id="editBrand${p.id}" value="${escapeHtml(p.brand||"")}"></label>
      <label>Tipo / estilo<input id="editType${p.id}" value="${escapeHtml(p.type||"")}"></label>
      <label>Estación<select id="editSeason${p.id}">${["Verano","Otoño","Invierno","Primavera"].map(x=>`<option ${x===p.season?"selected":""}>${x}</option>`).join("")}</select></label>
-     <label>Precio<input id="editPrice${p.id}" type="number" min="0" step="1" value="${p.price}"></label>
+     <label>Precio base<input id="editPrice${p.id}" type="number" min="0" step="1" value="${p.price}"></label>
      <label>URL de la foto<input id="editImage${p.id}" value="${escapeHtml(p.image||"")}"></label>
      <label>Descripción<textarea id="editDesc${p.id}">${escapeHtml(p.desc||"")}</textarea></label>
+     <div class="admin-card" style="margin:4px 0 0;padding:14px;background:#fff">
+       <h4 style="margin:0 0 8px">Presentaciones / cantidad</h4>
+       <p class="admin-note">Agregá todas las opciones que vendés. Si cada tamaño tiene un precio distinto, ponelo también.</p>
+       <div id="sizeList${p.id}">${(p.sizes&&p.sizes.length?p.sizes:[{label:"",price:p.price}]).map((x,i)=>`<div class="size-row" style="display:grid;grid-template-columns:1fr 150px auto;gap:7px;margin:7px 0"><input class="size-label" data-product="${p.id}" value="${escapeHtml(x.label||"")}" placeholder="Ej. 5 ml"><input class="size-price" data-product="${p.id}" type="number" min="0" value="${x.price??p.price}" placeholder="Precio"><button type="button" onclick="this.parentElement.remove()" style="border:1px solid #e1b7b7;background:#fff;color:#a44;border-radius:9px;padding:8px">Quitar</button></div>`).join("")}</div>
+       <button type="button" class="admin-edit-btn" style="margin-top:8px" onclick="addSizeRow(${p.id})">＋ Agregar presentación</button>
+     </div>
      <div class="admin-notes-grid">
        <label>Notas de salida<textarea id="editSalida${p.id}" placeholder="Una por línea">${escapeHtml((p.notes?.salida||[]).join("\n"))}</textarea></label>
        <label>Notas de corazón<textarea id="editCorazon${p.id}" placeholder="Una por línea">${escapeHtml((p.notes?.corazon||[]).join("\n"))}</textarea></label>
        <label>Notas de fondo<textarea id="editFondo${p.id}" placeholder="Una por línea">${escapeHtml((p.notes?.fondo||[]).join("\n"))}</textarea></label>
      </div>
-     <div class="admin-ai-row"><button type="button" class="admin-ai-btn" onclick="aiCompleteAdminProduct(${p.id})">✨ Completar con IA</button><span class="admin-ai-note">Escribí el nombre del perfume y la IA completará la ficha. Revisá los datos antes de guardar.</span></div>
      <div class="admin-edit-actions"><button class="admin-edit-save" onclick="saveAdminProduct(${p.id})">Guardar</button><button class="admin-edit-cancel" onclick="cancelAdminProduct(${p.id})">Cancelar</button></div>
    </div>`:""}
  </article>`).join("");
 }
-function editAdminProduct(id){
- const p=products.find(x=>x.id===id); if(!p)return;
- products.forEach(x=>{x._editing=false}); p._editing=true; renderAdminProducts();
- setTimeout(()=>document.getElementById("editName"+id)?.focus(),30);
-}
-function cancelAdminProduct(id){const p=products.find(x=>x.id===id);if(p)p._editing=false;renderAdminProducts();}
+function addSizeRow(id){const box=document.getElementById("sizeList"+id);if(!box)return;const row=document.createElement("div");row.className="size-row";row.style="display:grid;grid-template-columns:1fr 150px auto;gap:7px;margin:7px 0";row.innerHTML=`<input class="size-label" data-product="${id}" placeholder="Ej. 10 ml"><input class="size-price" data-product="${id}" type="number" min="0" placeholder="Precio"><button type="button" onclick="this.parentElement.remove()" style="border:1px solid #e1b7b7;background:#fff;color:#a44;border-radius:9px;padding:8px">Quitar</button>`;box.appendChild(row)}
+function addNewAdminProduct(){
+ const maxId=products.reduce((m,p)=>Math.max(m,Number(p.id)||0),0);const id=maxId+1;
+ products.forEach(x=>x._editing=false);products.push({id,name:"Nuevo perfume",brand:"",type:"",season:"Verano",price:0,image:"",notes:{salida:[],corazon:[],fondo:[]},desc:"",source:"",sizes:[{label:"5 ml",price:0}],_editing:true});renderAdminProducts();setTimeout(()=>document.getElementById("editName"+id)?.focus(),30);showToast("Nuevo producto listo para editar")}
+function editAdminProduct(id){const p=products.find(x=>x.id===id);if(!p)return;products.forEach(x=>{x._editing=false});p._editing=true;renderAdminProducts();setTimeout(()=>document.getElementById("editName"+id)?.focus(),30)}
+function cancelAdminProduct(id){const p=products.find(x=>x.id===id);if(p)p._editing=false;renderAdminProducts()}
 function linesToArray(v){return v.split(/\n|,/).map(x=>x.trim()).filter(Boolean)}
-async function aiCompleteAdminProduct(id){
- const p=products.find(x=>x.id===id); if(!p)return;
- const name=document.getElementById("editName"+id)?.value.trim();
- if(!name){showToast("Primero escribí el nombre del perfume");return}
- const btn=document.querySelector(`#editName${id}`)?.closest(".admin-edit-form")?.querySelector(".admin-ai-btn");
- if(btn){btn.disabled=true;btn.textContent="⏳ Consultando IA..."}
- try{
-   const current={brand:document.getElementById("editBrand"+id)?.value.trim()||"",type:document.getElementById("editType"+id)?.value.trim()||"",season:document.getElementById("editSeason"+id)?.value||"",description:document.getElementById("editDesc"+id)?.value.trim()||""};
-   const res=await fetch("/api/completar-perfume",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name,current})});
-   const data=await res.json();
-   if(!res.ok)throw new Error(data.error||"No se pudo consultar la IA");
-   const set=(id2,v)=>{const el=document.getElementById(id2);if(el&&v!==undefined&&v!==null)el.value=v};
-   set("editBrand"+id,data.brand);set("editType"+id,data.type);set("editDesc"+id,data.description);
-   if(data.season&&["Verano","Otoño","Invierno","Primavera"].includes(data.season))set("editSeason"+id,data.season);
-   set("editSalida"+id,(data.notes?.salida||[]).join("\n"));set("editCorazon"+id,(data.notes?.corazon||[]).join("\n"));set("editFondo"+id,(data.notes?.fondo||[]).join("\n"));
-   showToast("Ficha completada. Revisala antes de guardar.");
- }catch(err){console.error(err);showToast(err.message||"No se pudo completar la ficha")}
- finally{if(btn){btn.disabled=false;btn.textContent="✨ Completar con IA"}}
-}
-async function saveAdminProduct(id){
- const p=products.find(x=>x.id===id); if(!p)return;
- const name=document.getElementById("editName"+id).value.trim();
- const brand=document.getElementById("editBrand"+id).value.trim();
- const type=document.getElementById("editType"+id).value.trim();
- const season=document.getElementById("editSeason"+id).value;
- const price=Number(document.getElementById("editPrice"+id).value);
- const image=document.getElementById("editImage"+id).value.trim();
- const desc=document.getElementById("editDesc"+id).value.trim();
+function saveAdminProduct(id){
+ const p=products.find(x=>x.id===id);if(!p)return;
+ const name=document.getElementById("editName"+id).value.trim(),brand=document.getElementById("editBrand"+id).value.trim(),type=document.getElementById("editType"+id).value.trim(),season=document.getElementById("editSeason"+id).value,price=Number(document.getElementById("editPrice"+id).value),image=document.getElementById("editImage"+id).value.trim(),desc=document.getElementById("editDesc"+id).value.trim();
  if(!name||!brand||!type||!image||!Number.isFinite(price)||price<0){showToast("Completá los datos correctamente");return}
- p.name=name;p.brand=brand;p.type=type;p.season=season;p.price=price;p.image=image;p.desc=desc;
- p.notes={salida:linesToArray(document.getElementById("editSalida"+id).value),corazon:linesToArray(document.getElementById("editCorazon"+id).value),fondo:linesToArray(document.getElementById("editFondo"+id).value)};
- p._editing=false; await saveProductsAdmin(); renderAdminProducts(); render(); updateCart();
-}
-async function saveProductsAdmin(){
- localStorage.setItem("aromas_tandil_products",JSON.stringify(products));
- try{
-   await saveProductsToSupabase();
-   showToast("Producto guardado para todos los dispositivos");
- }catch(err){
-   console.error(err);
-   showToast("Se guardó localmente, pero Supabase rechazó el cambio");
- }
-}
+ const labels=[...document.querySelectorAll(`#sizeList${id} .size-label`)],prices=[...document.querySelectorAll(`#sizeList${id} .size-price`)];const sizes=labels.map((el,i)=>({label:el.value.trim(),price:Number(prices[i]?.value)||0})).filter(x=>x.label);
+ p.name=name;p.brand=brand;p.type=type;p.season=season;p.price=price;p.image=image;p.desc=desc;p.notes={salida:linesToArray(document.getElementById("editSalida"+id).value),corazon:linesToArray(document.getElementById("editCorazon"+id).value),fondo:linesToArray(document.getElementById("editFondo"+id).value)};p.sizes=sizes;p._editing=false;saveProductsAdmin();renderAdminProducts();render();updateCart();showToast("Producto actualizado")}
+function saveProductsAdmin(){products.forEach((p,i)=>normalizeProduct(p,i));localStorage.setItem("verde_products",JSON.stringify(products))}
 function renderAdminPromos(){
  document.getElementById("adminPromoList").innerHTML=adminPromos.map((p,i)=>`<div class="admin-card" style="margin:12px 0"><h3>Promoción ${i+1}</h3><div class="admin-grid"><label>Título<input id="promoTitle${i}" value="${escapeHtml(p.title||"")}"></label><label>Descuento<input id="promoDiscount${i}" value="${escapeHtml(p.discount||"0%")}"></label><label>Precio anterior<input id="promoOldPrice${i}" type="number" min="0" value="${p.oldPrice||0}"></label><label>Producto principal (ID)<input id="promoProduct${i}" type="number" min="1" value="${p.productId||1}"></label><label>IDs de combo (separados por coma)<input id="promoCombo${i}" value="${escapeHtml((p.comboIds||[]).join(","))}" placeholder="Ej. 5,3"></label><label class="full">Descripción<textarea id="promoDesc${i}">${escapeHtml(p.description||"")}</textarea></label></div></div>`).join("")+`<button class="admin-save" onclick="saveAdminPromos()">Guardar promociones</button><div class="admin-save-msg" id="promoMsg"></div>`;
 }
 function saveAdminPromos(){
  adminPromos.forEach((p,i)=>{p.title=document.getElementById("promoTitle"+i).value.trim();p.discount=document.getElementById("promoDiscount"+i).value.trim();p.oldPrice=Number(document.getElementById("promoOldPrice"+i).value)||0;p.productId=Number(document.getElementById("promoProduct"+i).value)||1;p.comboIds=document.getElementById("promoCombo"+i).value.split(",").map(x=>Number(x.trim())).filter(Boolean);p.description=document.getElementById("promoDesc"+i).value.trim()});
- localStorage.setItem("aromas_tandil_promos",JSON.stringify(adminPromos));renderPromoCarousel();document.getElementById("promoMsg").textContent="Promociones guardadas y actualizadas.";showToast("Promociones actualizadas");
+ localStorage.setItem("verde_promos",JSON.stringify(adminPromos));renderPromoCarousel(); updateNewOrdersBadge();document.getElementById("promoMsg").textContent="Promociones guardadas y actualizadas.";showToast("Promociones actualizadas");
+}
+
+function deleteCancelledOrder(number){
+  if(!confirm("¿Borrar definitivamente este pedido cancelado? Esta acción no se puede deshacer.")) return;
+  let cancelled=JSON.parse(localStorage.getItem("verde_cancelled_orders")||"[]");
+  cancelled=cancelled.filter(o=>String(o.number)!==String(number));
+  localStorage.setItem("verde_cancelled_orders",JSON.stringify(cancelled));
+  renderAdminOrders();
+  showToast("Pedido borrado definitivamente");
+}
+
+function updateNewOrdersBadge(){
+ const badge=document.getElementById("newOrdersBadge");
+ if(!badge)return;
+ const orders=JSON.parse(localStorage.getItem("verde_orders")||"[]");
+ const hasNew=orders.some(o=>o.isNew===true);
+ badge.style.display=hasNew?"inline-flex":"none";
+}
+function markOrdersAsSeen(){
+ let orders=JSON.parse(localStorage.getItem("verde_orders")||"[]");
+ let changed=false;
+ orders=orders.map(o=>{if(o.isNew){changed=true;return {...o,isNew:false}}return o});
+ if(changed)localStorage.setItem("verde_orders",JSON.stringify(orders));
+ updateNewOrdersBadge();
 }
 function renderAdminOrders(){
- const orders=JSON.parse(localStorage.getItem("aromas_tandil_orders")||"[]");
- document.getElementById("adminOrderList").innerHTML=orders.length?orders.slice().reverse().map(o=>`<div class="admin-order"><b>#${o.number}</b> · ${o.name} · ${money(o.total)}<br><span style="color:var(--muted)">${o.payment} · ${o.city}, ${o.address} · ${o.date}</span></div>`).join(""):"<p class='admin-note'>Todavía no hay pedidos guardados en este navegador.</p>";
+ const orders=JSON.parse(localStorage.getItem("verde_orders")||"[]");const cancelled=JSON.parse(localStorage.getItem("verde_cancelled_orders")||"[]");
+ const activeHtml=orders.length?orders.slice().reverse().map(o=>{const summary=(o.items||[]).map(i=>`${i.product||"Producto"}${i.presentation?" ("+i.presentation+")":""} x${i.quantity||1}`).join(" · ");return `<div class="admin-order"><b>#${escapeHtml(o.number)}</b> · ${escapeHtml(o.name)} · ${money(Number(o.total)||0)}<br><span style="color:var(--muted)">${escapeHtml(o.date||"")} · Tel: ${escapeHtml(o.phone||"")}</span><br><span style="color:var(--muted)">${escapeHtml(summary||o.itemsText||"")}</span><br><button class="admin-delete-btn" onclick="cancelOrder('${escapeHtml(o.number)}')">Eliminar pedido</button></div>`}).join(""):"<p class='admin-note'>Todavía no hay pedidos activos.</p>";
+ const cancelledHtml=cancelled.length?cancelled.slice().reverse().map(o=>`<div class="admin-order"><b>#${escapeHtml(o.number)}</b> · ${escapeHtml(o.name)} · ${money(Number(o.total)||0)}<br><span style="color:var(--muted)">${escapeHtml(o.date||"")} · Cancelado: ${escapeHtml(o.cancelledAt||"")}</span><br><span style="color:var(--muted)">${escapeHtml(o.itemsText||"")}</span><br><div class="order-actions"><button class="primary" onclick="recoverOrder('${escapeHtml(o.number)}')">↩️ Recuperar pedido</button><button class="admin-delete-btn" onclick="deleteCancelledOrder('${escapeHtml(o.number)}')">🗑️ Borrar definitivamente</button></div></div>`).join(""):"<p class='admin-note'>No hay pedidos cancelados.</p>";
+ document.getElementById("adminOrderList").innerHTML=`<h4>Pedidos recibidos</h4>${activeHtml}<div style="margin-top:28px;padding-top:18px;border-top:1px solid #edf0ec"><h4>Pedidos cancelados</h4>${cancelledHtml}</div>`;
 }
+function cancelOrder(number){let orders=JSON.parse(localStorage.getItem("verde_orders")||"[]");const i=orders.findIndex(o=>o.number===number);if(i<0)return;const o=orders.splice(i,1)[0];o.cancelledAt=new Date().toLocaleString("es-AR");let c=JSON.parse(localStorage.getItem("verde_cancelled_orders")||"[]");c.push(o);localStorage.setItem("verde_orders",JSON.stringify(orders));localStorage.setItem("verde_cancelled_orders",JSON.stringify(c));renderAdminOrders();showToast("Pedido movido a cancelados")}
+function recoverOrder(number){let c=JSON.parse(localStorage.getItem("verde_cancelled_orders")||"[]");const i=c.findIndex(o=>o.number===number);if(i<0)return;const o=c.splice(i,1)[0];delete o.cancelledAt;let orders=JSON.parse(localStorage.getItem("verde_orders")||"[]");orders.push(o);localStorage.setItem("verde_orders",JSON.stringify(orders));localStorage.setItem("verde_cancelled_orders",JSON.stringify(c));renderAdminOrders();showToast("Pedido recuperado")}
 function renderAdminQuestions(){
  const box=document.getElementById("adminQuestionList");
  if(!box)return;
  if(!questions.length){box.innerHTML="<p class='admin-note'>No hay preguntas todavía.</p>";return}
  box.innerHTML=questions.slice().reverse().map(q=>{const p=products.find(x=>x.id===q.productId);return `<div class="admin-item"><b>${escapeHtml(q.name||"Cliente")}</b> · ${escapeHtml(p?p.name:"Perfume")}${q.answer?" <span style='color:var(--green)'>· Respondida</span>":" <span style='color:#a66'>· Pendiente</span>"}<div style="margin-top:7px">${escapeHtml(q.text)}</div><textarea id="ans${q.id}" placeholder="Escribí la respuesta...">${escapeHtml(q.answer||"")}</textarea><button class="primary" onclick="answerQuestion(${q.id})">Guardar respuesta</button><button class="admin-delete-btn" onclick="deleteQuestion(${q.id})">Eliminar pregunta</button></div>`}).join("");
 }
-function answerQuestion(id){const q=questions.find(x=>x.id===id);if(!q)return;q.answer=document.getElementById("ans"+id).value.trim();localStorage.setItem("aromas_tandil_questions",JSON.stringify(questions));renderAdminQuestions();showToast("Respuesta guardada");}
-function deleteQuestion(id){const q=questions.find(x=>x.id===id);if(!q)return;if(!confirm("¿Eliminar esta pregunta? También se eliminará su respuesta."))return;questions=questions.filter(x=>x.id!==id);localStorage.setItem("aromas_tandil_questions",JSON.stringify(questions));renderAdminQuestions();showToast("Pregunta eliminada");}
+function answerQuestion(id){const q=questions.find(x=>x.id===id);if(!q)return;q.answer=document.getElementById("ans"+id).value.trim();localStorage.setItem("verde_questions",JSON.stringify(questions));renderAdminQuestions();showToast("Respuesta guardada");}
+function deleteQuestion(id){const q=questions.find(x=>x.id===id);if(!q)return;if(!confirm("¿Eliminar esta pregunta? También se eliminará su respuesta."))return;questions=questions.filter(x=>x.id!==id);localStorage.setItem("verde_questions",JSON.stringify(questions));renderAdminQuestions();showToast("Pregunta eliminada");}
 function saveStoreSettings(){
- const name=document.getElementById("storeName").value.trim()||"AROMAS TANDIL";
+ const name=document.getElementById("storeName").value.trim()||"VERDE PERFUMERÍA";
  const tagline=document.getElementById("storeTagline").value.trim()||"Fragancias para cada estación";
  const footer=document.getElementById("storeFooter").value.trim();
- localStorage.setItem("aromas_tandil_store",JSON.stringify({name,tagline,footer}));
+ const whatsappNumber=(document.getElementById("whatsappNumber")?.value||"").trim().replace(/\D/g,"");
+ localStorage.setItem("verde_store",JSON.stringify({name,tagline,footer,whatsappNumber}));
+ localStorage.setItem("verde_whatsapp",whatsappNumber);
  const brand=document.querySelector(".brand"); if(brand)brand.innerHTML=`${escapeHtml(name)}<small>${escapeHtml(tagline)}</small>`;
  const fs=document.getElementById("footerStoreName"); if(fs)fs.textContent=name;
  const ft=document.getElementById("footerTagline"); if(ft)ft.textContent=footer||tagline;
@@ -593,19 +559,68 @@ function saveStoreSettings(){
  document.getElementById("storeMsg").textContent="Personalización guardada y aplicada.";
  showToast("Tienda actualizada");
 }
-async function loadAdminData(){
- const p=localStorage.getItem("aromas_tandil_products");
- if(p){try{const arr=JSON.parse(p);if(Array.isArray(arr)&&arr.length)products.splice(0,products.length,...arr)}catch(e){}}
- const pr=localStorage.getItem("aromas_tandil_promos");if(pr){try{adminPromos=JSON.parse(pr)}catch(e){}}
- const st=localStorage.getItem("aromas_tandil_store");
- if(st){try{const v=JSON.parse(st);document.getElementById("storeName").value=v.name||"AROMAS TANDIL";document.getElementById("storeTagline").value=v.tagline||"Fragancias para cada estación";document.getElementById("storeFooter").value=v.footer||"Fragancias seleccionadas para cada estación.";document.querySelector(".brand").innerHTML=`${escapeHtml(document.getElementById("storeName").value)}<small>${escapeHtml(document.getElementById("storeTagline").value)}</small>`;document.getElementById("footerStoreName").textContent=document.getElementById("storeName").value;document.getElementById("footerTagline").textContent=document.getElementById("storeFooter").value||document.getElementById("storeTagline").value;document.title=document.getElementById("storeName").value}catch(e){}}
- const fromDb = await loadProductsFromSupabase();
- if(fromDb){ render(); updateCart(); renderAdminProducts(); }
-}
-;
+(function loadAdminData(){
+ try{
+  const p=localStorage.getItem("verde_products");
+  if(p){
+   const arr=JSON.parse(p);
+   if(Array.isArray(arr)&&arr.length){
+    const cleaned=arr.map((x,i)=>normalizeProduct(x,i)).filter(Boolean);
+    if(cleaned.length) products.splice(0,products.length,...cleaned);
+   }
+  }
+ }catch(e){console.warn("No se pudieron cargar los productos guardados",e)}
+ try{
+  const pr=localStorage.getItem("verde_promos");
+  if(pr){const parsed=JSON.parse(pr);if(Array.isArray(parsed))adminPromos=parsed}
+ }catch(e){}
+ try{
+  const st=JSON.parse(localStorage.getItem("verde_store")||"{}");
+  const name=st.name||"VERDE PERFUMERÍA",tag=st.tagline||"Fragancias para cada estación",footer=st.footer||"Fragancias seleccionadas para cada estación.";
+  document.getElementById("storeName").value=name;document.getElementById("storeTagline").value=tag;document.getElementById("storeFooter").value=footer;
+  document.getElementById("whatsappNumber").value=st.whatsappNumber||localStorage.getItem("verde_whatsapp")||"";
+  document.querySelector(".brand").innerHTML=`${escapeHtml(name)}<small>${escapeHtml(tag)}</small>`;
+  document.getElementById("footerStoreName").textContent=name;document.getElementById("footerTagline").textContent=footer||tag;document.title=name;
+ }catch(e){}
+})();
 
-renderPromoCarousel();loadPaymentSettings();
-loadAdminData().then(()=>{ render(); updateCart(); renderPromoCarousel(); startSlides(); }).catch(err=>{console.error(err); render(); updateCart(); renderPromoCarousel(); startSlides();});
+renderPromoCarousel();
+
+function openWhatsAppForOrder(order){
+  let number=(localStorage.getItem("verde_whatsapp")||"").replace(/\D/g,"");
+  if(!number){
+    try{
+      const store=JSON.parse(localStorage.getItem("verde_store")||"{}");
+      number=(store.whatsappNumber||"").replace(/\D/g,"");
+    }catch(e){}
+  }
+  if(!number){
+    if(typeof showToast==="function") showToast("Configurá primero el WhatsApp en Admin → Tienda");
+    return false;
+  }
+
+  // If an Argentine number was entered as a normal 10-digit local number,
+  // convert it to the international format used by wa.me.
+  if(number.length===10 && number[0] !== "0") number="54"+number;
+
+  const items=(order.items||[]).map((item,n)=>{
+    const qty=Number(item.quantity||item.qty||1);
+    const price=Number(item.price||0);
+    const presentation=item.presentation||item.sizeLabel||"—";
+    const subtotal=Number(item.total||price*qty);
+    return `${n+1}. Producto: ${item.product||item.name||"Producto"}\nMililitros / presentación: ${presentation}\nCantidad: ${qty}\nPrecio: $${price.toLocaleString("es-AR")}\nTotal: $${subtotal.toLocaleString("es-AR")}`;
+  }).join("\n\n");
+
+  const total=Number(order.total||0).toLocaleString("es-AR");
+  const msg=`Hola! Quiero hacer este pedido:\n\n${items}\n\nTotal del pedido: $${total}\nNombre del cliente: ${order.name||""}\nTeléfono: ${order.phone||""}\n\nQuiero coordinar la compra con vos.`;
+
+  const waUrl=`https://wa.me/${number}?text=${encodeURIComponent(msg)}`;
+
+  // Same-tab navigation is more reliable on iPhone/iPad than popup windows.
+  window.location.href=waUrl;
+  return true;
+}
+
 function openCheckout(){
  if(!cart.length){showToast("El carrito está vacío");return}
  closeCart();
@@ -623,41 +638,75 @@ function getShippingCost(){
 }
 function renderCheckout(){
  const items=document.getElementById("checkoutItems");
- let subtotal=0;
+ if(!items)return;
+ let total=0;
  items.innerHTML=cart.map(x=>{
-   const p=products.find(y=>y.id===x.id);
-   const unit=x.promo?p.price*(1-(x.discount||0)):p.price;
-   subtotal+=unit*x.qty;
-   return `<div class="summary-item"><img src="${p.image}" alt="${p.name}"><div><b>${p.name}</b><small>${x.qty} × ${money(unit)}${x.promo?" · oferta":""}</small></div></div>`;
+   const p=products.find(y=>y.id===x.id)||{};
+   const name=x.productName||p.name||"Producto";
+   const image=x.productImage||p.image||"";
+   const unit=Number(x.unitPrice??p.price??0)*(x.promo?1-(x.discount||0):1);
+   const qty=Number(x.qty||1);
+   const sub=unit*qty; total+=sub;
+   return `<div class="summary-item">${image?`<img src="${escapeHtml(image)}" alt="${escapeHtml(name)}">`:""}<div><b>${escapeHtml(name)}</b><small>${x.sizeLabel?escapeHtml(x.sizeLabel)+" · ":""}${qty} × ${money(unit)}</small><strong>${money(sub)}</strong></div></div>`;
  }).join("");
- const ship=getShippingCost();
- document.getElementById("checkoutSubtotal").textContent=money(subtotal);
- document.getElementById("checkoutShipping").textContent=ship?money(ship):"Gratis";
- document.getElementById("shippingPrice").textContent=ship?money(ship):"Gratis";
- document.getElementById("checkoutTotal").textContent=money(subtotal+ship);
+ document.getElementById("checkoutTotal").textContent=money(total);
 }
 document.addEventListener("change",e=>{if(e.target.name==="shipping")renderCheckout()});
 function finishOrder(){
- const required=["coName","coPhone","coEmail","coCity","coAddress","coPostal"];
- for(const id of required){
-   const el=document.getElementById(id);
-   if(!el.value.trim()){el.focus();showToast("Completá todos los datos obligatorios");return}
- }
- if(!document.getElementById("coTerms").checked){showToast("Tenés que aceptar los términos de compra");return}
- const payment=document.querySelector('input[name="payment"]:checked').value;
+ const name=document.getElementById("coName").value.trim();
+ const phone=document.getElementById("coPhone").value.trim();
+ if(!name){document.getElementById("coName").focus();showToast("Ingresá tu nombre");return}
+ if(!phone){document.getElementById("coPhone").focus();showToast("Ingresá tu teléfono");return}
+
  const orderNumber="V"+Date.now().toString().slice(-7);
- const subtotal=cart.reduce((sum,x)=>{const p=products.find(y=>y.id===x.id);const unit=x.promo?p.price*(1-(x.discount||0)):p.price;return sum+unit*x.qty},0);
- const total=subtotal+getShippingCost();
- const orderData={number:orderNumber,name:document.getElementById("coName").value,phone:document.getElementById("coPhone").value,email:document.getElementById("coEmail").value,city:document.getElementById("coCity").value,address:document.getElementById("coAddress").value,postal:document.getElementById("coPostal").value,payment,date:new Date().toLocaleString("es-AR"),total};
- const oldOrders=JSON.parse(localStorage.getItem("aromas_tandil_orders")||"[]");oldOrders.push(orderData);localStorage.setItem("aromas_tandil_orders",JSON.stringify(oldOrders));
- const payCfg=getPaymentSettings();let payButton="";if(payment==="Mercado Pago"&&payCfg.mp)payButton=`<a class="finish-order" href="${escapeHtml(payCfg.mp)}" target="_blank" rel="noopener">Pagar con Mercado Pago</a>`;else if(payment==="Naranja X"&&payCfg.nx)payButton=`<a class="finish-order" href="${escapeHtml(payCfg.nx)}" target="_blank" rel="noopener">Pagar con Naranja X</a>`;else if(payment==="Transferencia"&&payCfg.transfer)payButton=`<div class="payment-note"><b>Datos para transferir:</b><br>${escapeHtml(payCfg.transfer)}</div>`;document.querySelector(".checkout-main").innerHTML=`<div class="order-success"><div class="success-icon">✓</div><h2>Pedido recibido</h2><p>Tu pedido <b>#${orderNumber}</b> quedó registrado.</p><p><b>Forma de pago:</b> ${escapeHtml(payment)}<br><b>Total:</b> ${money(total)}</p>${payButton||`<p class="payment-note">El administrador todavía no configuró un link para este medio de pago.</p>`}<button class="finish-order" onclick="location.reload()">Volver a la tienda</button></div>`;
- cart=[];saveCart();updateCart();
+ const items=cart.map(x=>{
+   const p=products.find(y=>y.id===x.id)||{};
+   const unit=Number(x.unitPrice??p.price??0)*(x.promo?1-(x.discount||0):1);
+   const qty=Number(x.qty||1);
+   return {
+     product:p.name||x.productName||"Producto",
+     presentation:x.sizeLabel||"",
+     quantity:qty,
+     price:unit,
+     total:unit*qty
+   };
+ });
+ const total=items.reduce((s,x)=>s+x.total,0);
+ const orderData={
+   number:orderNumber,
+   name,
+   phone,
+   date:new Date().toLocaleString("es-AR"),
+   total,
+   items,
+   isNew:true
+ };
+
+ const oldOrders=JSON.parse(localStorage.getItem("verde_orders")||"[]");
+ oldOrders.push(orderData);
+ localStorage.setItem("verde_orders",JSON.stringify(oldOrders));
+ updateNewOrdersBadge();
+
+ const sent=openWhatsAppForOrder(orderData);
+ if(sent){
+   cart=[];
+   saveCart();
+   updateCart();
+ }
 }
 
 function showToast(t){const x=document.getElementById("toast");x.textContent=t;x.classList.add("show");clearTimeout(window.tt);window.tt=setTimeout(()=>x.classList.remove("show"),2200)}
 function openLegacyQuestionAdmin(){showAdminPanel()}
 
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeProduct();closeAdmin();closeDrawer();closeCart()}})
+render();updateCart();startSlides();
+</script>
+
+<script>
+window.addEventListener('error',function(e){
+ const grid=document.getElementById('grid');
+ if(grid && !grid.children.length){grid.innerHTML='<div class="empty" style="grid-column:1/-1">No se pudieron cargar los perfumes. Recargá la página.</div>'}
+});
 </script>
 </body>
 </html>
